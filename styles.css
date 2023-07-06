@@ -11,7 +11,7 @@ body {
   h1 {
     color: #333;
   }
-  .email-form {
+  .email-form, .code-form {
     margin: 20px auto;
     max-width: 400px;
   }

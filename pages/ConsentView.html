@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File List Page</title>
+  <style>
+    /* Add some basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    .file-list {
+      margin: 20px auto;
+      max-width: 400px;
+    }
+    .file-item {
+      margin-bottom: 10px;
+    }
+    .submit-button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>File List Page</h1>
+  <div class="file-list">
+    <h3>Consent Files:</h3>
+    <ul>
+      <li>Consent File 1</li>
+      <li>Consent File 2</li>
+      <li>Consent File 3</li>
+      <li>Consent File 4</li>
+    </ul>
+    <p>Date:</p>
+    <input type="date">
+    <div>
+      <label for="nameInput">Name:</label>
+      <input type="text" id="nameInput">
+    </div>
+    <div>
+      <label for="surnameInput">Surname:</label>
+      <input type="text" id="surnameInput">
+    </div>
+    <button class="submit-button" onclick="submitForm()">Submit</button>
+  </div>
+  
+  <script>
+    function submitForm() {
+      var name = document.getElementById('nameInput').value;
+      var surname = document.getElementById('surnameInput').value;
+      
+      // Perform any additional client-side validation if needed
+      
+      // Send the form data to the server for processing
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', '/submit-form', true);
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+          // Success! Do something with the response if needed
+          console.log(xhr.responseText);
+        }
+      };
+      xhr.send(JSON.stringify({ name: name, surname: surname }));
+    }
+  </script>
+</body>
+</html>

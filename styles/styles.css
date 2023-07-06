@@ -16,10 +16,10 @@ body {
     width: 30%;
   }
   .emailInput, .code-input {
+    margin: 10px auto;
     width: 80%;
-    padding: 10px 10px;
+    padding: 10px;
     font-size: 16px;
-    margin-bottom: 10px;
   }
 
   .submit-button {

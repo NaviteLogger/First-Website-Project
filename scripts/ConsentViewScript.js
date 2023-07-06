@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 function submitForm() {
-    var name = document.getElementById('nameInput').value;
-    var surname = document.getElementById('surnameInput').value;
+    var name = document.getElementById('clientsNameAndSurnameInput').value;
+    var surname = document.getElementById('employeeNameAndSurnameInput').value;
     
     // Perform any additional client-side validation if needed
     

@@ -9,14 +9,14 @@
 </head>
 <body>
   <h1>Dokumenty do wypelnienia i zatwierdzenia</h1>
-  <div class="file-list">
+  <div class="fileList">
     <h3>Lista dokumentow:</h3>
-    <ul>
-      <li>RODO</li>
-      <li>Wywiad</li>
-      <li>Zgoda na zabieg</li>
-      <li>Zgoda na zdjecie</li>
-    </ul>
+    <ol>
+      <li class="fileItem">RODO</li>
+      <li class="fileItem">Wywiad</li>
+      <li class="fileItem">Zgoda na zabieg</li>
+      <li class="fileItem">Zgoda na zdjecie</li>
+    </ol>
 
     <h2>Dzisiejsza data:</h2>
     <h2 id="currentDate"></h2>
@@ -27,10 +27,11 @@
       <input type="text" id="clientsNameAndSurnameInput">
     </div>
     <div class="nameAndSurnameInputBoxes">
+        <h4>Dane osoby upowaznionej:</h4>
       <label for="employeeNameAndSurnameInput">Imie i nazwisko osoby upowaznionej:</label>
       <input type="text" id="employeeNameAndSurnameInput">
     </div class="nameAndSurnameInputBoxes">
-    <button class="submit-button" onclick="submitForm()">Dalej</button>
+    <button class="submitButton" onclick="submitForm()">Dalej</button>
   </div>
 </body>
 </html>

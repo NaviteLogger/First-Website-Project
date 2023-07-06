@@ -8,12 +8,12 @@ body {
     color: #333;
   }
 
-  .file-list {
+  .fileList {
     margin: 20px auto;
-    max-width: 6500px;
+    max-width:15%;
   }
 
-  .file-item {
+  .fileItem {
     margin-bottom: 10px;
   }
 
@@ -22,7 +22,7 @@ body {
     max-width: 600px;
   }
 
-  .submit-button {
+  .submitButton {
     background-color: #4CAF50;
     color: white;
     border: none;

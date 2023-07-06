@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     var currentDateElement = document.getElementById('currentDate');
     var currentDate = new Date();
-    currentDateElement.textContent = 'Current Date: ' + currentDate.toDateString();
+    var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', locale: 'pl-PL' };
+    currentDateElement.textContent = currentDate.toLocaleDateString('pl-PL', options);
   });
 
 function submitForm() {

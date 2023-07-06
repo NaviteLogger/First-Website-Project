@@ -1,9 +1,4 @@
 /* Add some basic styling */
-* {
-    background-color: black;
-    color: white;
-}
-
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -11,14 +6,11 @@ body {
   h1 {
     color: #333;
   }
-  .email-form, .code-form {
+  .file-list {
     margin: 20px auto;
     max-width: 400px;
   }
-  .email-input, .code-input {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
+  .file-item {
     margin-bottom: 10px;
   }
   .submit-button {

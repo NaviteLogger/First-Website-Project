@@ -1,3 +1,9 @@
+document.addEventListener('DOMContentLoaded', function() {
+    var currentDateElement = document.getElementById('currentDate');
+    var currentDate = new Date();
+    currentDateElement.textContent = 'Current Date: ' + currentDate.toDateString();
+  });
+
 function submitForm() {
     var name = document.getElementById('nameInput').value;
     var surname = document.getElementById('surnameInput').value;

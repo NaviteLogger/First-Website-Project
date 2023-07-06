@@ -13,14 +13,15 @@ body {
   }
   .email-form, .code-form {
     margin: 20px auto;
-    max-width: 400px;
+    width: 30%;
   }
-  .email-input, .code-input {
-    width: 90%;
-    padding: 10px;
+  .emailInput, .code-input {
+    width: 80%;
+    padding: 10px 10px;
     font-size: 16px;
     margin-bottom: 10px;
   }
+
   .submit-button {
     background-color: #4CAF50;
     color: white;

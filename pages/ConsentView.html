@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>File List Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConsentView</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="script" href="../scripts/ConsentViewScript.js">
   <style>
     /* Add some basic styling */
     body {
@@ -55,24 +59,7 @@
   </div>
   
   <script>
-    function submitForm() {
-      var name = document.getElementById('nameInput').value;
-      var surname = document.getElementById('surnameInput').value;
-      
-      // Perform any additional client-side validation if needed
-      
-      // Send the form data to the server for processing
-      var xhr = new XMLHttpRequest();
-      xhr.open('POST', '/submit-form', true);
-      xhr.setRequestHeader('Content-Type', 'application/json');
-      xhr.onreadystatechange = function() {
-        if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-          // Success! Do something with the response if needed
-          console.log(xhr.responseText);
-        }
-      };
-      xhr.send(JSON.stringify({ name: name, surname: surname }));
-    }
+    
   </script>
 </body>
 </html>

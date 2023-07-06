@@ -1,37 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Welcome to My Website</title>
+  <title>Witam na stronie [nazwa do wymyślenia]</title>
   <style>
-    /* Add some basic styling */
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
-    h1 {
-      color: #333;
-    }
-    .email-form {
-      margin: 20px auto;
-      max-width: 400px;
-    }
-    .email-input {
-      width: 100%;
-      padding: 10px;
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
-    .submit-button {
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      cursor: pointer;
-    }
+    
   </style>
 </head>
 <body>
@@ -43,23 +15,7 @@
   </div>
   
   <script>
-    function submitEmail() {
-      var email = document.getElementById('user_email').value;
-      
-      // Perform any additional client-side validation if needed
-      
-      // Send the email to the server for processing
-      var xhr = new XMLHttpRequest();
-      xhr.open('POST', '/submit-email', true);
-      xhr.setRequestHeader('Content-Type', 'application/json');
-      xhr.onreadystatechange = function() {
-        if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-          // Success! Do something with the response if needed
-          console.log(xhr.responseText);
-        }
-      };
-      xhr.send(JSON.stringify({ email: email }));
-    }
+    
   </script>
 </body>
 </html>

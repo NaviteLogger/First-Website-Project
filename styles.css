@@ -1,4 +1,9 @@
 /* Add some basic styling */
+* {
+    background-color: black;
+    color: white;
+}
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;

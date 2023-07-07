@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RODOagreementsPage</title>
+  <title>RODOagreementPage</title>
+  <style>
+    #signatureCanvas {
+      border: 1px solid #000;
+    }
+  </style>
+  <script src="../scripts/RODOagreementPageScript.js"></script>
 </head>
 <body>
-    
+  <h4>Tutaj załadujemy plik PDF ze zgodą RODO</h4>
+  <h4>Podpis:</h4>
+  <canvas id="signatureCanvas" width="400" height="200"></canvas>
+  <br>
+  <button onclick="clearSignature()">Clear Signature</button>
+  <br>
+  <button onclick="saveSignature()">Save Signature</button>
 </body>
 </html>

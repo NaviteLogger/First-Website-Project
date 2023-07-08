@@ -2,9 +2,9 @@
     display: grid;
     grid-template-columns: 50px 50px;
     grid-template-rows: 50px 50px;
+    gap: 10px;
   }
 
 .item {
     border: 5px solid #3a3a3a;
-    margin: auto;
 }

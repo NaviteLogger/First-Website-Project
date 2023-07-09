@@ -1,5 +1,3 @@
-import { testFunction } from "./EmailVerificationPageScript";
-
 document.addEventListener('DOMContentLoaded', function() {
     var currentDateElement = document.getElementById('currentDate');
     var currentDate = new Date();
@@ -25,5 +23,3 @@ function submitForm() {
     };
     xhr.send(JSON.stringify({ name: name, surname: surname }));
   }
-
-testFunction();

@@ -14,10 +14,11 @@ function submitEmail() {
       }
     };
     xhr.send(JSON.stringify({ email: email }));
-  }
+}
 
 function testFunction() {
     console.log("test");
 }
 
 export { testFunction };
+
